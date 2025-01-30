@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #FADADD;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+#prettypleaseimage {
+    width: 250px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#btn_yes, #btn_no {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#btn_yes {
+    background-color: blue;
+    color: white;
+}
+
+#btn_yes:hover {
+    background-color: skyblue;
+}
+
+#btn_yes:disabled {
+    background-color: skyblue;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#btn_yes:disabled:hover {
+    background-color: skyblue;
+    cursor: not-allowed;
+}
+
+#btn_no {
+    background-color: red;
+    color: white;
+}
+
+#btn_no:hover {
+    background-color: pink;
+}
